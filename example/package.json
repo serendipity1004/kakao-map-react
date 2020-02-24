@@ -5,11 +5,11 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "kakao-map-react": "link:..",
     "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "^1.1.4",
-    "kakao-map-react": "link:.."
+    "react": "link:../node_modules/react",
+    "react-dom": "link:../node_modules/react-dom",
+    "react-scripts": "^1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
