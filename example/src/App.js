@@ -4,6 +4,7 @@ import {
   Map,
   Marker,
   Overlay,
+  RoadView,
 } from 'kakao-map-react'
 
 const App = () => {
@@ -30,8 +31,8 @@ const App = () => {
                console.log(map);
              }}
              center={{
-               longitude:pos[0],
-               latitude:pos[1]
+               longitude: pos[0],
+               latitude: pos[1]
              }}>
           {/*<Marker longitude={pos[0]} latitude={pos[1]}/>*/}
           <Overlay longitude={pos[0]} latitude={pos[1]} content={`
@@ -39,7 +40,16 @@ const App = () => {
           test
 </div>`}/>
         </Map>
-
+        <RoadView longitude={127.02770621963765}
+                  latitude={37.498004414546934}
+                  style={{
+                    position: 'absolute',
+                    left: 20,
+                    bottom: 20,
+                    width: 300,
+                    height: 100,
+                    zIndex:200,
+                  }}/>
       </div>
     </React.Fragment>
   )
